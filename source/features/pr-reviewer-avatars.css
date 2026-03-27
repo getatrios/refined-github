@@ -1,0 +1,51 @@
+.rgh-pr-reviewer-avatars {
+	display: flex;
+	gap: 4px;
+	align-items: flex-start;
+	flex-shrink: 0;
+	padding-top: 4px;
+}
+
+.rgh-reviewer-avatar {
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+}
+
+.rgh-reviewer-avatar img {
+	border-radius: 50%;
+	outline: 2px solid var(--fgColor-muted, var(--color-fg-muted));
+	outline-offset: -1px;
+}
+
+.rgh-reviewer-approved img {
+	outline-color: var(--fgColor-success, var(--color-success-fg));
+}
+
+.rgh-reviewer-changes-requested img {
+	outline-color: var(--fgColor-danger, var(--color-danger-fg));
+}
+
+.rgh-reviewer-pending img {
+	outline-color: var(--fgColor-attention, var(--color-attention-fg));
+}
+
+.rgh-reviewer-badge {
+	position: absolute;
+	bottom: -3px;
+	right: -5px;
+	width: 12px;
+	height: 12px;
+}
+
+.rgh-reviewer-badge.rgh-reviewer-approved path {
+	fill: var(--fgColor-success, var(--color-success-fg));
+}
+
+.rgh-reviewer-badge.rgh-reviewer-changes-requested path {
+	fill: var(--fgColor-danger, var(--color-danger-fg));
+}
+
+.rgh-reviewer-badge.rgh-reviewer-pending path {
+	fill: var(--fgColor-attention, var(--color-attention-fg));
+}

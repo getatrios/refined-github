@@ -91,6 +91,7 @@ import './features/collapsible-content-button.js';
 import './features/actionable-pr-view-file.js'; // Must be before more-file-links
 import './features/more-file-links.js';
 import './features/pr-filters.js';
+import './features/pr-reviewer-avatars.js';
 import './features/quick-file-edit.js';
 import './features/update-pr-from-base-branch.js';
 import './features/tag-changes-link.js';
