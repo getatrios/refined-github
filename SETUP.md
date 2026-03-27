@@ -2,7 +2,7 @@
 
 ## Chrome
 
-1. Download the latest release from the [Releases page](https://github.com/refined-github/refined-github/releases) or build from source (see [Development](#development) below)
+1. Build from source (see [Development](#development) below)
 2. Navigate to `chrome://extensions/`
 3. Enable **Developer mode** (toggle in the top right)
 4. Click **Load unpacked**
