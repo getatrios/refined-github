@@ -8,7 +8,7 @@ import DotFillIcon from 'octicons-plain-react/DotFill';
 import FileDiffIcon from 'octicons-plain-react/FileDiff';
 import batchedFunction from 'batched-function';
 
-import {closestElementOptional, $} from 'select-dom';
+import {$optional, closestElementOptional, elementExists} from 'select-dom';
 
 import features from '../feature-manager.js';
 import api from '../github-helpers/api.js';
@@ -153,11 +153,11 @@ async function addReviewerAvatars(links: HTMLAnchorElement[]): Promise<void> {
 		}
 
 		const row = closestElementOptional('.js-issue-row', pr.link);
-		if (!row || $('.rgh-pr-reviewer-avatars', row)) {
+		if (!row || elementExists('.rgh-pr-reviewer-avatars', row)) {
 			continue;
 		}
 
-		const assigneeSection = closestElementOptional('span', $('.AvatarStack', row));
+		const assigneeSection = closestElementOptional('span', $optional('.AvatarStack', row));
 		if (!assigneeSection) {
 			continue;
 		}
